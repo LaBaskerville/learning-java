@@ -8,7 +8,7 @@ public class nestedLoop {
         buatSegitiga(ulang) ;
     }
     private static int inputData() {
-        System.err.print("masukkan angka yang anda inginkan : ");
+        System.out.print("masukkan angka yang anda inginkan : ");
         BufferedReader bfr = new BufferedReader (new InputStreamReader(System.in));
         String angkaInput = null ;
         try {
@@ -25,18 +25,18 @@ public class nestedLoop {
         for (int i=1; i <= ulang; i++) {
             //looping ini mencetak spasi di awal baris agar # terlihat ke tengah.
             for (int j=1; j<=(ulang-i); j++) {
-                System.err.print(" ");
+                System.out.print(" ");
             }
             //looping ini mencetak # untuk bagian kiri
             for (int k=1; k<=i; k++) {
-                System.err.print("#");
+                System.out.print("#");
             }
             //looping ini mencetak # untuk bagian kanan 
             for (int b=2; b<=i; b++) {
-                System.err.print("#");
+                System.out.print("#");
             }
         //digunakan untuk pindah baris diakhir loop
-        System.err.println(" ");;
+        System.out.println(" ");;
         }
     }
 }
